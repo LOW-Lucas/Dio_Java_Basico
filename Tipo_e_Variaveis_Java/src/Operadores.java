@@ -1,19 +1,31 @@
 import java.util.Scanner;
 
+// <-- Comentario de uma unica linha
+
+/* <-- Comentario com varias linhas  
+ * 
+ * 
+ */
+
+ /** <-- Comentario do tipo documentação 
+  * 
+
+  */
+
 public class Operadores{
         public static void main(String[] args) throws Exception {
-            int varInt=0,r=0;
+            int R=0,V=0; // R é o resultado e o V é o valor digitado
             Scanner input = new Scanner(System.in);
             System.out.println(" Digite um numero");
-            r = input.nextInt();
-                while(r>0){
-                    varInt=r%2;
-                    if (varInt==0){
-                        System.out.println(r+" é par");
+            V = input.nextInt();
+                while(V>0){
+                    R=V%2;
+                    if (R==0){
+                        System.out.println(V+" é par");
                     }else{
-                        System.out.println(r+" é impar");
+                        System.out.println(V+" é impar");
                     }
-                r--;
+                V--;
                 }
         }   
 }
