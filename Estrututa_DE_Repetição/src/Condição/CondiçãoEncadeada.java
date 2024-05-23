@@ -1,6 +1,7 @@
+package Condição;
 import java.util.Scanner;
 
-public class CondiçãoTernaria {
+public class CondiçãoEncadeada {
     public static void main(String[] args){
         int nota1,nota2,nota3,mediaFinal = 0;
 
@@ -15,7 +16,11 @@ public class CondiçãoTernaria {
 
         mediaFinal = (nota1+nota2+nota3)/3;
 
-        String resultado =mediaFinal >=7 ? "Aprovado": mediaFinal >=5 && mediaFinal < 7 ? "Recuperação":"Reprovado";
-        System.out.println(resultado);
-    }
+        if(mediaFinal >= 7)
+            System.out.println("A sua media final foi: "+mediaFinal+ " - Aprovado");
+        else if (mediaFinal >= 5 && mediaFinal <7)
+            System.out.println("A sua media final foi: "+mediaFinal+ " - É possivel a recuperação");
+        else 
+            System.out.println("A sua media final foi: "+mediaFinal+ " - Reprovado");
+        }
 }

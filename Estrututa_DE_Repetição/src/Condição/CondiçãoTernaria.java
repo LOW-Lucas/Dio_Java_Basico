@@ -1,6 +1,8 @@
+package Condição;
+
 import java.util.Scanner;
 
-public class CondiçãoComposta {
+public class CondiçãoTernaria {
     public static void main(String[] args){
         int nota1,nota2,nota3,mediaFinal = 0;
 
@@ -15,9 +17,7 @@ public class CondiçãoComposta {
 
         mediaFinal = (nota1+nota2+nota3)/3;
 
-        if(mediaFinal >= 7)
-            System.out.println("A sua media final foi: "+mediaFinal+ " - Aprovado");
-        else
-            System.out.println("A sua media final foi: "+mediaFinal+ " - Reprovado");
+        String resultado =mediaFinal >=7 ? "Aprovado": mediaFinal >=5 && mediaFinal < 7 ? "Recuperação":"Reprovado";
+        System.out.println(resultado);
     }
 }

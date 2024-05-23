@@ -1,3 +1,4 @@
+package Condição;
 import java.util.Scanner;
 
 public class SwitchCase {

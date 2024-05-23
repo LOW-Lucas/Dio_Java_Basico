@@ -1,6 +1,7 @@
+package Condição;
 import java.util.Scanner;
 
-public class CondiçãoEncadeada {
+public class CondiçãoComposta {
     public static void main(String[] args){
         int nota1,nota2,nota3,mediaFinal = 0;
 
@@ -17,9 +18,7 @@ public class CondiçãoEncadeada {
 
         if(mediaFinal >= 7)
             System.out.println("A sua media final foi: "+mediaFinal+ " - Aprovado");
-        else if (mediaFinal >= 5 && mediaFinal <7)
-            System.out.println("A sua media final foi: "+mediaFinal+ " - É possivel a recuperação");
-        else 
+        else
             System.out.println("A sua media final foi: "+mediaFinal+ " - Reprovado");
-        }
+    }
 }
